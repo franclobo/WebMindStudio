@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Black Ops One', cursive;
+  src: url(./assets/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf);
+}
+@font-face {
+  font-family: 'AudioWide', cursive;
+  src: url(./assets/fonts/Audiowide/Audiowide-Regular.ttf);
+}
+@font-face {
+  font-family: 'Caprasimo', cursive;
+  src: url(./assets/fonts/Caprasimo/Caprasimo-Regular.ttf);
+}
+@font-face {
+  font-family: 'Cutive Mono', monospace;
+  src: url(./assets/fonts/Cutive_Mono/CutiveMono-Regular.ttf);
+}
+@font-face {
+  font-family: 'MyriamadPro Italic', sans-serif;
+  src: url(./assets/fonts/Myriad_Pro/MYRIADPRO-ITALIC.ttf);
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #444343;
+}
+
+* {
+  max-width: 100%;
+}
+
+/*----------Navbar----------*/
+
+.navbar {
+  background-color: #444343;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo__img {
+  height: 70px;
+  width: auto;
+}
+
+.logo__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.title {
+  font-family: 'Black Ops One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-family: 'AudioWide', cursive;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
+  padding: 0 2rem;
+  font-family: 'AudioWide', cursive;
+}
+
+/*----------Home----------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+}
+
+.wmash {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.wmash__title {
+  font-family: 'Black Ops One', cursive;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'MyriamadPro Italic', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/*----------Servicios----------*/
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #444343;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.basico {
+  border: 5px solid #d7e60a;
+  border-radius: 10px;
+}
+
+.avanzado {
+  border: 5px solid #0a57e6;
+  border-radius: 10px;
+}
+
+.premium {
+  border: 5px solid #e6240a;
+  border-radius: 10px;
+}
+
+.basico__title,
+.avanzado__title,
+.premium__title {
+  font-family: 'Black Ops One', cursive;
+  font-size: 1.5rem;
+  color: #444343;
+  text-align: center;
+}
+
+.basico__description,
+.avanzado__description,
+.premium__description {
+  font-family: 'MyriamadPro Italic', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  align-self: center;
+}
+
+
