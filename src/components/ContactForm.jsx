@@ -38,7 +38,7 @@ const ContactForm = () => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#11992e",
+        main: "#1cbfdb",
       },
     },
   });
