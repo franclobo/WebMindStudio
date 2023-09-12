@@ -48,7 +48,7 @@ const ContactForm = () => {
       <Box
         component="div"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "40ch" },
+          "& .MuiTextField-root": { m: 1, width: "35ch" },
           "& .MuiInputLabel-root": { color: "#fff" }, // Set label color to white
           "& .MuiOutlinedInput-root": {
             "& fieldset": {
