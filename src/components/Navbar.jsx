@@ -1,4 +1,4 @@
-import React from 'react'
+import "boxicons";
 import { Link } from 'react-router-dom'
 import Logo from "../assets/images/pc.png";
 
@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div>
-        <Link to="/" className='logo'>
+        <Link to="/" className="logo">
           <img src={Logo} alt="logo" className="logo__img" />
           <div className="logo__txt">
             <h1 className="title">WebMinds Studio</h1>
@@ -16,9 +16,11 @@ export const Navbar = () => {
         </Link>
       </div>
       <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <a href="#home">
+          <box-icon name="home" type="solid" color="rgba(255,255,255,1)"></box-icon>
+        </a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   );
