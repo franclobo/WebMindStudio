@@ -31,7 +31,7 @@ function Footer() {
       </article>
       <article className="footer__article">
         <h3 className="footer__title">
-          Escríbenos tus inquietudes o comentarios.
+          Escríbenos tus requerimientos con gusto nos contactaremos contigo.
         </h3>
         <ContactForm />
         <small className="autor">

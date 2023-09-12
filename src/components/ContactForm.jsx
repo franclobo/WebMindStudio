@@ -117,7 +117,7 @@ const ContactForm = () => {
             fullWidth
             required
             id="outlined-multiline-static"
-            label="¿Deseas anotar alguna intensión?"
+            label="¿Qué uso le darás a tu página web?"
             multiline
             rows={4}
             placeholder="Mensaje..."

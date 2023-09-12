@@ -1,28 +1,44 @@
 import "boxicons";
 import { Link } from 'react-router-dom'
 import Logo from "../assets/images/pc.png";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 
-export const Navbar = () => {
+export const WebNavbar = () => {
   return (
-    <div className="navbar">
-      <div>
-        <Link to="/" className="logo">
-          <img src={Logo} alt="logo" className="logo__img" />
-          <div className="logo__txt">
-            <h1 className="title">WebMinds Studio</h1>
-            <p className="subtitle">Haz tu sueño digital</p>
-          </div>
-        </Link>
-      </div>
-      <div className="links">
-        <a href="#home">
-          <box-icon name="home" type="solid" color="rgba(255,255,255,1)"></box-icon>
-        </a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+    <>
+      <Navbar expand="xl" className="bg-body-tertiary">
+        <Container fluid>
+          <Navbar.Brand href="#home">
+            <Link to="/" className="logo">
+              <img src={Logo} alt="logo" className="logo__img" />
+              <div className="logo__txt">
+                <h1 className="title">WebMinds Studio</h1>
+                <p className="subtitle">Haz tu sueño digital</p>
+              </div>
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">
+                <a href="#home">
+                  <box-icon
+                    name="home"
+                    type="solid"
+                    color="rgba(255,255,255,1)"
+                  ></box-icon>
+                </a>
+              </Nav.Link>
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 

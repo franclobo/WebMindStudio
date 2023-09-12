@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Navbar } from './components/Navbar'
+import { WebNavbar } from './components/Navbar'
 import { Home } from './components/Home'
+import "bootstrap/dist/css/bootstrap.min.css"
 import './App.scss'
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <WebNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
