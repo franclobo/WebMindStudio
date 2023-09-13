@@ -10,7 +10,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img className="d-block w-100" src={Security} alt="First slide" />
         <Carousel.Caption>
-          <h3>Quienes somos</h3>
+          <h3>Quiénes somos</h3>
           <p>
             Somos un equipo apasionado de diseñadores, desarrolladores y
             expertos en tecnología comprometidos con la excelencia y la
@@ -48,7 +48,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img className="d-block w-100" src={WebMobile} alt="Third slide" />
         <Carousel.Caption>
-          <h3>Como lo hacemos</h3>
+          <h3>Cómo lo hacemos</h3>
           <p>
             Nuestro enfoque se basa en la creatividad, la calidad y la
             colaboración. Utilizamos tecnología de vanguardia y metodologías
