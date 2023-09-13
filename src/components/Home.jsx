@@ -1,5 +1,5 @@
 import Logo from "../assets/images/webmind.svg";
-import Security from "../assets/images/security.jpg";
+import UncontrolledExample from "./Carousel";
 import Footer from "./Footer";
 
 export const Home = () => {
@@ -121,44 +121,9 @@ export const Home = () => {
           <strong className="premium__description">Desde: US $2999</strong>
         </div>
       </section>
+
       <section className="about" id="about">
-        <img src={Security} alt="security" />
-        <div className="about__text">
-          <p className="que">
-            Somos un equipo apasionado de diseñadores, desarrolladores y
-            expertos en tecnología comprometidos con la excelencia y la
-            innovación. Nuestro talentoso equipo colabora estrechamente contigo
-            para transformar tus ideas en realidades digitales poderosas y
-            efectivas.
-          </p>
-          <p className="cuando">
-            Desde nuestra fundación, hemos estado entregando soluciones
-            digitales de alta calidad a clientes satisfechos. Siempre estamos
-            listos para abrazar nuevos desafíos y oportunidades, trabajando con
-            rapidez y precisión para cumplir con tus plazos.
-          </p>
-          <p className="donde">
-            Estamos ubicados en Quito - Ecuador, pero nuestras soluciones
-            digitales trascienden fronteras. Colaboramos con clientes en todo el
-            mundo para crear experiencias digitales que dejan una impresión
-            duradera en la audiencia.
-          </p>
-          <p className="porque">
-            Creemos que la tecnología es la clave para desbloquear el potencial
-            de las empresas en el mundo digital. Queremos empoderarte para que
-            alcances nuevos horizontes, conquistes mercados y destaquen entre la
-            competencia. Tu éxito es nuestro éxito, y trabajamos incansablemente
-            para ayudarte a alcanzar tus objetivos.
-          </p>
-          <p className="como">
-            Nuestro enfoque se basa en la creatividad, la calidad y la
-            colaboración. Utilizamos tecnología de vanguardia y metodologías
-            probadas para crear soluciones personalizadas que se adaptan a tus
-            necesidades únicas. Desde el primer borrador hasta la implementación
-            final, te mantenemos en el centro de todo el proceso, asegurándonos
-            de que cada detalle se alinee con tu visión y objetivos.
-          </p>
-        </div>
+        <UncontrolledExample />
       </section>
       <section className="footer">
         <Footer />
