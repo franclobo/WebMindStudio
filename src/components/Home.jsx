@@ -16,7 +16,9 @@ export const Home = () => {
           <p className="elevator">
             En Webminds Studio creamos oportunidades. Tu éxito es nuestra
             prioridad, y estamos emocionados de trabajar contigo para llevar tus
-            ideas a la vida digital. ¡Bienvenidos a una colaboración que
+            ideas a la vida digital.
+            <br />
+            ¡Bienvenidos a una colaboración que
             transformará tu presencia en línea y hará que tu marca brille en el
             mundo digital!
           </p>
