@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Black Ops One', cursive;
+  font-family: 'Black Ops One', sans-serif;
   src: url(./assets/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf);
 }
 @font-face {
-  font-family: 'AudioWide', cursive;
+  font-family: 'AudioWide', sans-serif;
   src: url(./assets/fonts/Audiowide/Audiowide-Regular.ttf);
 }
 @font-face {
-  font-family: 'Caprasimo', cursive;
+  font-family: 'Caprasimo', sans-serif;
   src: url(./assets/fonts/Caprasimo/Caprasimo-Regular.ttf);
 }
 @font-face {
@@ -85,7 +85,7 @@
 }
 
 .title {
-  font-family: 'Black Ops One', cursive;
+  font-family: 'Black Ops One', sans-serif;
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
@@ -94,7 +94,7 @@
 }
 
 .subtitle {
-  font-family: 'AudioWide', cursive;
+  font-family: 'AudioWide', sans-serif;
   letter-spacing: 2px;
   font-size: 1.2rem;
   color: #fff;
@@ -110,7 +110,7 @@
   gap: 1rem;
   width: 30%;
   padding: 0 2rem;
-  font-family: 'AudioWide', cursive;
+  font-family: 'AudioWide', sans-serif;
 }
 
 /*----------Home----------*/
@@ -141,7 +141,7 @@ main {
     }
   }
   .wmash__title {
-    font-family: 'Black Ops One', cursive;
+    font-family: 'Black Ops One', sans-serif;
     text-align: center;
     text-transform: uppercase;
     @media (max-width: 375px) {
@@ -204,7 +204,7 @@ main {
 .basico__title,
 .avanzado__title,
 .premium__title {
-  font-family: 'Black Ops One', cursive;
+  font-family: 'Black Ops One', sans-serif;
   font-size: 1.5rem;
   color: #444343;
   text-align: center;
