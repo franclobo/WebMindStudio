@@ -4,6 +4,7 @@ import Logo from "../assets/images/pc.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import whatsapp from "../assets/icons/ic_whatsapp.svg";
 
 
 export const WebNavbar = () => {
@@ -34,6 +35,9 @@ export const WebNavbar = () => {
               </Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="https://wa.me/593961842276?text=Hello">
+                <img className="whatsapp" src={whatsapp} alt="whatsapp" />
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
