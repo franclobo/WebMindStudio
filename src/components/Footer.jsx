@@ -50,7 +50,7 @@ function Footer() {
         </p>
         <p className="footer__text">
           <MailOutlined />
-          Email: fjbl2788@gmail.com
+          Email: francisco.borja@webmindsstudio.com
         </p>
         <p className="footer__text">
           <ClockCircleOutlined />
