@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 375px){
+    @media (max-width: 768px){
       width: 100vw;
       padding: 0 10px;
     }
@@ -51,7 +51,7 @@
       .nav-link{
         color: #fff;
       }
-      @media (max-width: 375px){
+      @media (max-width: 768px){
         position: relative;
         .nav-link{
           color: #fff;
@@ -79,7 +79,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -127,7 +127,7 @@ main {
   gap: 2rem;
   padding: 0 2rem;
   height: 100vh;
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     grid-template-columns: 1fr;
     height: auto;
     max-width: 375px;
@@ -136,7 +136,7 @@ main {
   .wmash__img {
     width: 100%;
     height: auto;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       max-width: 375px;
     }
   }
@@ -144,7 +144,7 @@ main {
     font-family: 'Black Ops One', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       max-width: 375px;
       font-size: 2rem;
     }
@@ -155,7 +155,7 @@ main {
     line-height: 1.5;
     text-align: justify;
 
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       padding: 0 20px;
     }
   }
@@ -168,7 +168,7 @@ main {
   gap: 2rem;
   padding: 2rem;
   background-color: #444343;
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: auto;
   }
@@ -222,7 +222,7 @@ main {
 
 .about {
   width: 100%;
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: auto;
   }
@@ -240,7 +240,7 @@ main {
     font-size: 3rem;
     color: #fff;
     text-align: center;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       max-width: 375px;
       font-size: 1.5rem;
     }
@@ -250,7 +250,7 @@ main {
     font-size: 2rem;
     line-height: 1.5;
     text-align: justify;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       padding: 0 20px;
       font-size: 1rem;
       text-align: left;
@@ -268,7 +268,7 @@ main {
   backface-visibility: visible;
   color: #fff;
   gap: 120px;
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     display: flex;
     max-width: 375px;
     flex-direction: column;
@@ -282,7 +282,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
 
     }
   }
@@ -295,7 +295,7 @@ main {
     gap: 10px;
     width: 345px;
     text-align: center;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       max-width: 375px;
       font-size: 1.2rem;
     }
@@ -306,7 +306,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       max-width: 375px;
     }
   }
@@ -317,7 +317,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     max-width: 375px;
   }
 }
