@@ -10,7 +10,10 @@ export const Home = () => {
       </section>
       <section className="wmash" id="about">
         <div className="wmash__img">
-          <img src={Logo} alt="internet" />
+          <img
+            src={Logo}
+            alt="Diseño de Páginas Web en Quito - WebMinds Studio"
+          />
         </div>
         <div className="wmash__txt">
           <h1 className="wmash__title">
