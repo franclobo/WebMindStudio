@@ -34,6 +34,7 @@ export const WebNavbar = () => {
                 </a>
               </Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#services">Services</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Link href="https://wa.me/593961842276?text=Hello">
                 <img className="whatsapp" src={whatsapp} alt="whatsapp" />

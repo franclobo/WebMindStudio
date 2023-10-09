@@ -8,7 +8,7 @@ export const Home = () => {
       <section className="about" id="home">
         <UncontrolledExample />
       </section>
-      <section className="wmash">
+      <section className="wmash" id="about">
         <div className="wmash__img">
           <img src={Logo} alt="internet" />
         </div>
@@ -26,7 +26,7 @@ export const Home = () => {
           </p>
         </div>
       </section>
-      <section className="services" id="about">
+      <section className="services" id="services">
         <div className="servicio basico">
           <h2 className="basico__title">Presencia Digital Inicial</h2>
           <p className="basico__txt">
