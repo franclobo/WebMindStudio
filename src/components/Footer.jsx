@@ -16,7 +16,7 @@ function Footer() {
           Dirección
         </h3>
         <p className="footer__text">
-          Av. Pablo Esteban Yerovi Romo y calle N81C
+          Oe7B N86-67 y Francisco de Rumihurco
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7979.628185580849!2d-78.5037583!3d-0.0834076!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1694549433002!5m2!1ses!2sec"
