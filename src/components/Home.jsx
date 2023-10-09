@@ -5,6 +5,9 @@ import Footer from "./Footer";
 export const Home = () => {
   return (
     <main>
+      <section className="about" id="about">
+        <UncontrolledExample />
+      </section>
       <section className="wmash" id="home">
         <div className="wmash__img">
           <img src={Logo} alt="internet" />
@@ -18,9 +21,8 @@ export const Home = () => {
             prioridad, y estamos emocionados de trabajar contigo para llevar tus
             ideas a la vida digital.
             <br />
-            ¡Bienvenidos a una colaboración que
-            transformará tu presencia en línea y hará que tu marca brille en el
-            mundo digital!
+            ¡Bienvenidos a una colaboración que transformará tu presencia en
+            línea y hará que tu marca brille en el mundo digital!
           </p>
         </div>
       </section>
@@ -122,10 +124,6 @@ export const Home = () => {
           </ul>
           <strong className="premium__description">Desde: US $2999</strong>
         </div>
-      </section>
-
-      <section className="about" id="about">
-        <UncontrolledExample />
       </section>
       <section className="footer">
         <Footer />
