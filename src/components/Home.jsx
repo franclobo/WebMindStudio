@@ -5,10 +5,10 @@ import Footer from "./Footer";
 export const Home = () => {
   return (
     <main>
-      <section className="about" id="about">
+      <section className="about" id="home">
         <UncontrolledExample />
       </section>
-      <section className="wmash" id="home">
+      <section className="wmash">
         <div className="wmash__img">
           <img src={Logo} alt="internet" />
         </div>
@@ -26,7 +26,7 @@ export const Home = () => {
           </p>
         </div>
       </section>
-      <section className="services" id="services">
+      <section className="services" id="about">
         <div className="servicio basico">
           <h2 className="basico__title">Presencia Digital Inicial</h2>
           <p className="basico__txt">
