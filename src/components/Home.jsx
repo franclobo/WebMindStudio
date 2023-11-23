@@ -58,7 +58,7 @@ export const Home = () => {
             <li className="basico__item">Inicio rápido en línea.</li>
             <li className="basico__item">Presencia digital profesional.</li>
           </ul>
-          <strong className="basico__description">Desde: US $499</strong>
+          <strong className="basico__description">Desde: CLP $499000 + IVA</strong>
         </div>
         <div className="servicio avanzado">
           <h2 className="avanzado__title">Experiencia Digital Completa</h2>
@@ -93,7 +93,7 @@ export const Home = () => {
               Solución de software que se adapta a tus requerimientos.
             </li>
           </ul>
-          <strong className="avanzado__description">Desde: US $1499</strong>
+          <strong className="avanzado__description">Desde: CLP $1499000 + IVA</strong>
         </div>
         <div className="servicio premium">
           <h2 className="premium__title">Transformación Digital Total</h2>
@@ -125,7 +125,7 @@ export const Home = () => {
               Transformación digital para un crecimiento sostenible.
             </li>
           </ul>
-          <strong className="premium__description">Desde: US $2999</strong>
+          <strong className="premium__description">Desde: CLP $2999000 + IVA</strong>
         </div>
       </section>
       <section className="footer">
