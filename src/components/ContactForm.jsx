@@ -140,7 +140,12 @@ const ContactForm = () => {
             )}
           </Space>
           <ThemeProvider theme={theme}>
-            <Button variant="contained" type="submit" color="primary">
+            <Button
+              variant="contained"
+              type="submit"
+              color="primary"
+              style={{ width: "95%" }}
+            >
               Enviar
             </Button>
           </ThemeProvider>
