@@ -131,9 +131,26 @@ main {
     margin-top: 100px;
   }
   .wmash__img {
-    height: auto;
+    position: relative;
+    height: 100%;
+    img {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
     @media (max-width: 768px) {
       max-width: 375px;
+      img {
+        position: relative;
+        margin: 0;
+        height: 100%;
+        width: auto;
+      }
     }
   }
   .wmash__title {
@@ -168,20 +185,44 @@ main {
 /*----------Servicios----------*/
 .services {
   display: grid;
+  position: relative;
+  top: 120px;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: 120px;
   padding: 2rem;
+  margin-bottom: 120px;
   @media (max-width: 768px) {
+    top: 40px;
     grid-template-columns: 1fr;
+    gap: 20px;
     height: auto;
+  }
+}
+
+.service_img {
+  position: relative;
+  img {
+    position: relative;
+    width: auto;
+    z-index: 1;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    height: 100%;
+    img {
+      margin: 20px;
+      height: 1000px;
+      width: auto;
+    }
   }
 }
 
 .servicio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 1rem;
   padding: 1.5rem;
   border-radius: 10px;
@@ -197,18 +238,63 @@ main {
   border: 5px solid rgba(215, 230, 10, 1);
   background-color: rgba(215, 230, 10, 0.5);
   border-radius: 10px;
+  img {
+    position: absolute;
+    top: -275px;
+    height: 709px;
+    left: -30px;
+    width: auto;
+    z-index: 1;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
 }
 
 .avanzado {
   border: 5px solid rgba(10, 87, 230, 1);
   background-color: rgba(10, 87, 230, 0.5);
   border-radius: 10px;
+  img {
+    position: absolute;
+    top: -191px;
+    height: 670px;
+    left: -38px;
+    width: auto;
+    z-index: 1;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
 }
 
 .premium {
   border: 5px solid rgb(230, 36, 10, 1);
   background-color: rgba(230, 36, 10, 0.5);
   border-radius: 10px;
+  img {
+    position: absolute;
+    top: -282px;
+    height: 747px;
+    left: -4px;
+    width: auto;
+    z-index: 1;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
 }
 
 .basico__title,
@@ -371,8 +457,8 @@ main {
 }
 
 .technologies__title {
-  font-family: 'MiriamadPro Bold', sans-serif;
-  font-size: 2rem;
+  font-family: 'Caprasimo', sans-serif;
+  font-size: 3rem;
   color: #444343;
   text-align: center;
   text-transform: uppercase;
