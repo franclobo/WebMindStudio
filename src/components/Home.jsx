@@ -64,7 +64,7 @@ export const Home = () => {
               <li className="basico__item">Presencia digital profesional.</li>
             </ul>
             <strong className="basico__description price">
-              Desde: USD $299
+              Desde: USD $499
             </strong>
           </div>
           <div className="service_img">
@@ -113,7 +113,7 @@ export const Home = () => {
               </li>
             </ul>
             <strong className="avanzado__description price">
-              Desde: USD $599
+              Desde: USD $1499
             </strong>
           </div>
         </div>
@@ -149,7 +149,7 @@ export const Home = () => {
               </li>
             </ul>
             <strong className="premium__description price">
-              Desde: USD $999
+              Desde: USD $2999
             </strong>
           </div>
           <div className="service_img">
