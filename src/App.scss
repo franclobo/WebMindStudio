@@ -2,14 +2,17 @@
   font-family: 'Black Ops One';
   src: url(./assets/fonts/Black_Ops_One/BlackOpsOne-Regular.ttf);
 }
+
 @font-face {
   font-family: 'AudioWide';
   src: url(./assets/fonts/Audiowide/Audiowide-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Caprasimo';
   src: url(./assets/fonts/Caprasimo/Caprasimo-Regular.ttf);
 }
+
 @font-face {
   font-family: 'MyriamadPro Bold';
   src: url(./assets/fonts/Myriad_Pro/MYRIADPRO-BOLD.otf);
@@ -25,9 +28,9 @@
   max-width: 100%;
 }
 
-/*----------Navbar----------*/
+/* ----------Navbar---------- */
 .navbar {
-  .container-fluid{
+  .container-fluid {
     background-color: #444343;
     position: fixed;
     top: 0;
@@ -36,20 +39,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
       width: 100vw;
       padding: 0 10px;
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
       position: absolute;
       right: 0;
       padding: 0 30px;
-      .nav-link{
+
+      .nav-link {
         color: #fff;
       }
-      @media (max-width: 768px){
+
+      @media (max-width: 768px) {
         position: relative;
-        .nav-link{
+
+        .nav-link {
           color: #fff;
         }
       }
@@ -75,6 +83,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
+
   @media (max-width: 768px) {
     display: none;
   }
@@ -109,11 +118,163 @@
   font-family: 'AudioWide', sans-serif;
 }
 
-/*----------Home----------*/
+/* ----------Home---------- */
 
 main {
   display: flex;
   flex-direction: column;
+}
+
+.service_img {
+  position: relative;
+
+  img {
+    position: relative;
+    width: auto;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    height: 100%;
+
+    img {
+      margin: 20px;
+      height: 1000px;
+      width: auto;
+    }
+  }
+}
+
+.basico {
+  border: 5px solid rgba(215, 230, 10, 1);
+  background-color: rgba(215, 230, 10, 0.5);
+  border-radius: 10px;
+
+  img {
+    position: absolute;
+    top: -275px;
+    height: 709px;
+    left: -30px;
+    width: auto;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.avanzado {
+  border: 5px solid rgba(10, 87, 230, 1);
+  background-color: rgba(10, 87, 230, 0.5);
+  border-radius: 10px;
+
+  img {
+    position: absolute;
+    top: -191px;
+    height: 670px;
+    left: -38px;
+    width: auto;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.premium {
+  border: 5px solid rgb(230, 36, 10, 1);
+  background-color: rgba(230, 36, 10, 0.5);
+  border-radius: 10px;
+
+  img {
+    position: absolute;
+    top: -282px;
+    height: 747px;
+    left: -4px;
+    width: auto;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+/* ----------About---------- */
+
+.about {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  img {
+    height: 100vh;
+    opacity: 0.8;
+  }
+
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  h3 {
+    font-family: 'MyriamadPro Bold', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      max-width: 375px;
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-family: 'Audio Wide', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10rem;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
 }
 
 .wmash {
@@ -124,27 +285,31 @@ main {
   padding: 0 3rem;
   margin-top: 20px;
   height: 100vh;
-  @media (max-width: 768px){
+
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: auto;
     max-width: 375px;
     margin-top: 100px;
   }
+
   .wmash__img {
     position: relative;
     height: 100%;
+
     img {
-      position: absolute;
+      position: relative;
       margin: 0;
       padding: 0;
-      position: relative;
       top: 0;
       left: 0;
       height: 100%;
       width: auto;
     }
+
     @media (max-width: 768px) {
       max-width: 375px;
+
       img {
         position: relative;
         margin: 0;
@@ -153,15 +318,18 @@ main {
       }
     }
   }
+
   .wmash__title {
     font-family: 'MyriamadPro Bold', sans-serif;
     text-align: center;
     text-transform: uppercase;
+
     @media (max-width: 768px) {
       max-width: 375px;
       font-size: 2rem;
     }
   }
+
   p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
@@ -182,7 +350,7 @@ main {
   padding: 0 2rem;
 }
 
-/*----------Servicios----------*/
+/* ----------Servicios---------- */
 .services {
   display: grid;
   position: relative;
@@ -191,32 +359,12 @@ main {
   gap: 120px;
   padding: 2rem;
   margin-bottom: 120px;
+
   @media (max-width: 768px) {
     top: 40px;
     grid-template-columns: 1fr;
     gap: 20px;
     height: auto;
-  }
-}
-
-.service_img {
-  position: relative;
-  img {
-    position: relative;
-    width: auto;
-    z-index: 1;
-  }
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 375px;
-    height: 100%;
-    img {
-      margin: 20px;
-      height: 1000px;
-      width: auto;
-    }
   }
 }
 
@@ -226,74 +374,11 @@ main {
   gap: 1rem;
   padding: 1.5rem;
   border-radius: 10px;
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: auto;
-  }
-}
-
-.basico {
-  border: 5px solid rgba(215, 230, 10, 1);
-  background-color: rgba(215, 230, 10, 0.5);
-  border-radius: 10px;
-  img {
-    position: absolute;
-    top: -275px;
-    height: 709px;
-    left: -30px;
-    width: auto;
-    z-index: 1;
-    @media (max-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: auto;
-    }
-  }
-}
-
-.avanzado {
-  border: 5px solid rgba(10, 87, 230, 1);
-  background-color: rgba(10, 87, 230, 0.5);
-  border-radius: 10px;
-  img {
-    position: absolute;
-    top: -191px;
-    height: 670px;
-    left: -38px;
-    width: auto;
-    z-index: 1;
-    @media (max-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: auto;
-    }
-  }
-}
-
-.premium {
-  border: 5px solid rgb(230, 36, 10, 1);
-  background-color: rgba(230, 36, 10, 0.5);
-  border-radius: 10px;
-  img {
-    position: absolute;
-    top: -282px;
-    height: 747px;
-    left: -4px;
-    width: auto;
-    z-index: 1;
-    @media (max-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: auto;
-    }
   }
 }
 
@@ -312,7 +397,6 @@ main {
   font-family: 'MyriamadPro Bold', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
-  align-self: left;
 }
 
 .price {
@@ -321,59 +405,7 @@ main {
   color: #444343;
 }
 
-/*----------About----------*/
-
-.about {
-  width: 100%;
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-  img {
-    height: 100vh;
-    opacity: 0.8;
-  }
-  .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 4rem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  h3 {
-    font-family: 'MyriamadPro Bold', sans-serif;
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    @media (max-width: 768px) {
-      max-width: 375px;
-      font-size: 1.5rem;
-    }
-  }
-  p {
-    font-family: 'Audio Wide', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: center;
-    padding: 0 10rem;
-    @media (max-width: 768px) {
-      padding: 0 20px;
-      font-size: 1rem;
-      text-align: left;
-    }
-  }
-}
-
-/*----------Contact----------*/
+/* ----------Contact---------- */
 .footer {
   display: flex;
   justify-content: center;
@@ -383,6 +415,7 @@ main {
   backface-visibility: visible;
   color: #fff;
   gap: 20px;
+
   @media (max-width: 768px) {
     display: flex;
     max-width: 375px;
@@ -397,9 +430,6 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
-    @media (max-width: 768px) {
-
-    }
   }
 
   .footer__text,
@@ -410,6 +440,7 @@ main {
     gap: 10px;
     width: 345px;
     text-align: center;
+
     @media (max-width: 768px) {
       max-width: 375px;
       font-size: 1.2rem;
@@ -421,6 +452,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+
     @media (max-width: 768px) {
       max-width: 375px;
     }
@@ -432,6 +464,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (max-width: 768px) {
     max-width: 375px;
   }
@@ -447,6 +480,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+
   @media (max-width: 768px) {
     display: flex;
     max-width: 375px;
@@ -462,6 +496,7 @@ main {
   color: #444343;
   text-align: center;
   text-transform: uppercase;
+
   @media (max-width: 768px) {
     max-width: 375px;
     font-size: 1.5rem;
@@ -473,6 +508,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+
   @media (max-width: 768px) {
     display: flex;
     max-width: 375px;
