@@ -16,17 +16,17 @@ function Footer() {
           Dirección
         </h3>
         <p className="footer__text">
-          Los Copihues 7045, comuna Lo Prado, Región Metropolitana
+          Oe7B N86-67 y Francisco de Rumihurco, El Condado.
         </p>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.269194695681!2d-70.73649702487656!3d-33.442292497093476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c393f02e2a35%3A0x21f8afcb54670394!2sLos%20Copihues%207045%2C%208980580%20Lo%20Prado%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1700774910688!5m2!1ses-419!2scl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.814090789583!2d-78.5063822259608!3d-0.08342733549234653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d585c4a3e7029d%3A0xb5afedad806898b0!2sWebMinds%20Studio!5e0!3m2!1ses-419!2snl!4v1702908612646!5m2!1ses-419!2snl"
           width="250"
           height="250"
           style={{ border: "0" }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Los Copihues 7045, 8980580 Lo Prado, Región Metropolitana"
+          title="WebMinds Studio, Quito, Ecuador"
         />
       </article>
       <article className="footer__article">
@@ -46,14 +46,18 @@ function Footer() {
         <h3 className="footer__title">Contacto</h3>
         <p className="footer__text">
           <PhoneOutlined />
-          Celular: +56 9 2758 3663
-          <br/>
-                   +56 9 3065 8893
+          Celular: <br />
+          Quito: +593 96 184 2276
+          <br />
+          Santiago de Chile: +56 9 3065 8893
         </p>
         <p className="footer__text">
           <MailOutlined />
-          Email: francisco.borja@webmindsstudio.com
-                 carlos.chiluisa@webmindsstudio.com
+          Email:
+          <br />
+          francisco.borja@webmindsstudio.com
+          <br />
+          carlos.chiluisa@webmindsstudio.com
         </p>
         <p className="footer__text">
           <ClockCircleOutlined />
