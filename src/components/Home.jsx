@@ -1,4 +1,4 @@
-import Studio from "../assets/images/click.png";
+import Studio from "../assets/images/diseño.jpg";
 import UncontrolledExample from "./Carousel";
 import Footer from "./Footer";
 import Pensativo from "../assets/images/pensativo.png";

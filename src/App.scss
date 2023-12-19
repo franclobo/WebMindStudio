@@ -163,11 +163,7 @@ main {
     z-index: 1;
 
     @media (max-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: auto;
+      display: none;
     }
   }
 }
@@ -186,11 +182,7 @@ main {
     z-index: 1;
 
     @media (max-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: auto;
+      display: none;
     }
   }
 }
@@ -209,11 +201,7 @@ main {
     z-index: 1;
 
     @media (max-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: auto;
+      display: none;
     }
   }
 }
@@ -239,7 +227,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 4rem;
+    padding: 10rem 0;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -249,40 +237,60 @@ main {
     border-radius: 10px;
   }
 
-  h3 {
-    font-family: 'MyriamadPro Bold', sans-serif;
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-
-    @media (max-width: 768px) {
-      max-width: 375px;
-      font-size: 1.5rem;
-    }
+  .carousel-indicators {
+    display: none;
   }
 
-  p {
-    font-family: 'Audio Wide', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: center;
+  .dp-1__title,
+  .dp-2__title,
+  .dp-3__title,
+  .dp-4__title {
+    font-family: 'Caprasimo', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: left;
+    text-transform: none;
+    width: 1000px;
+    align-self: flex-end;
     padding: 0 10rem;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
-      font-size: 1rem;
-      text-align: left;
+      max-width: 375px;
+      text-align: center;
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .dp-1__phrase,
+  .dp-2__phrase,
+  .dp-3__phrase,
+  .dp-4__phrase {
+    font-family: 'AudioWide', sans-serif;
+    font-size: 1.2rem;
+    color: #e5e5e5;
+    text-align: left;
+    text-transform: none;
+    width: 1000px;
+    align-self: flex-end;
+    padding: 0 10rem;
+
+    @media (max-width: 768px) {
+      max-width: 375px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
     }
   }
 }
 
 .wmash {
   display: grid;
-  background-color: rgba(68, 67, 67, 0.5);
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 3rem 0 0;
   margin-top: 20px;
   height: 100vh;
 
@@ -291,11 +299,13 @@ main {
     height: auto;
     max-width: 375px;
     margin-top: 100px;
+    padding: 0;
   }
 
   .wmash__img {
     position: relative;
     height: 100%;
+    margin: 0;
 
     img {
       position: relative;
@@ -314,7 +324,7 @@ main {
         position: relative;
         margin: 0;
         height: 100%;
-        width: auto;
+        width: 100%;
       }
     }
   }
