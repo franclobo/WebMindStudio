@@ -3,7 +3,7 @@ import UncontrolledExample from "./Carousel";
 import Footer from "./Footer";
 import Pensativo from "../assets/images/pensativo.png";
 import Emocionado from "../assets/images/emocionado.png";
-import Compras from "../assets/images/compras.png";
+import Compras from "../assets/images/transformación.png";
 import { IconCarousel } from "./Icons";
 
 export const Home = () => {
