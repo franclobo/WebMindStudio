@@ -1,10 +1,5 @@
 import Logo from "../assets/images/pc.png";
 import LocationOn from "../assets/icons/LocationOn.svg";
-import {
-  PhoneOutlined,
-  MailOutlined,
-  ClockCircleOutlined,
-} from "@ant-design/icons";
 import ContactForm from "./ContactForm";
 
 function Footer() {
@@ -45,14 +40,12 @@ function Footer() {
         <img src={Logo} alt="logo" style={{ width: "300px" }} />
         <h3 className="footer__title">Contacto</h3>
         <p className="footer__text">
-          <PhoneOutlined />
           Celular: <br />
           Quito: +593 96 184 2276
           <br />
           Santiago de Chile: +56 9 3065 8893
         </p>
         <p className="footer__text">
-          <MailOutlined />
           Email:
           <br />
           francisco.borja@webmindsstudio.com
@@ -60,8 +53,7 @@ function Footer() {
           carlos.chiluisa@webmindsstudio.com
         </p>
         <p className="footer__text">
-          <ClockCircleOutlined />
-          Horario de atención: 08:00 - 18:00 de Lunes a Sábado
+          Horario de atención: 08:00 - 18:00 UTC -5 de Lunes a Sábado
         </p>
       </article>
     </footer>

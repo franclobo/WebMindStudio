@@ -29,37 +29,55 @@
 }
 
 /* ----------Navbar---------- */
-.navbar {
-  .container-fluid {
-    background-color: #444343;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    @media (max-width: 768px) {
-      width: 100vw;
-      padding: 0 10px;
+/* Estilos para cuando la barra de navegación es visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Estilos para cuando la barra de navegación está oculta */
+.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Estilos generales para la barra de navegación */
+
+.bg-body-tertiary {
+  background-color: #444343 !important;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  /* Ajusta según sea necesario */
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    padding: 0 30px;
+
+    .nav-link {
+      color: #fff;
     }
 
-    .navbar-collapse {
-      position: absolute;
-      right: 0;
-      padding: 0 30px;
+    @media (max-width: 768px) {
+      position: relative;
 
       .nav-link {
         color: #fff;
-      }
-
-      @media (max-width: 768px) {
-        position: relative;
-
-        .nav-link {
-          color: #fff;
-        }
       }
     }
   }
@@ -69,7 +87,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
 }
 
 .logo__img {
@@ -138,7 +155,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 375px;
+    max-width: 100%;
     height: 100%;
 
     img {
@@ -255,11 +272,12 @@ main {
     padding: 0 10rem;
 
     @media (max-width: 768px) {
-      max-width: 375px;
+      align-self: center;
+      max-width: 100%;
       text-align: center;
       font-size: 24px;
-      margin: 0;
-      padding: 0;
+      margin: 0 20px;
+      padding: 0 20px;
     }
   }
 
@@ -277,11 +295,29 @@ main {
     padding: 0 10rem;
 
     @media (max-width: 768px) {
-      max-width: 375px;
+      align-self: center;
+      max-width: 100%;
       text-align: center;
       font-size: 16px;
-      margin: 0;
-      padding: 0;
+      margin: 0 20px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.icons {
+  margin: 0 30px;
+
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
+
+  img {
+    height: 100px;
+    width: auto;
+
+    @media (max-width: 768px) {
+      height: 50px;
     }
   }
 }
@@ -297,7 +333,7 @@ main {
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: auto;
-    max-width: 375px;
+    max-width: 100%;
     margin-top: 100px;
     padding: 0;
   }
@@ -318,7 +354,7 @@ main {
     }
 
     @media (max-width: 768px) {
-      max-width: 375px;
+      max-width: 100%;
 
       img {
         position: relative;
@@ -333,20 +369,26 @@ main {
     font-family: 'MyriamadPro Bold', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1.5;
+    width: 100%;
 
     @media (max-width: 768px) {
-      max-width: 375px;
-      font-size: 2rem;
+      padding: 20px;
+      max-width: 100%;
+      font-size: 24px;
     }
   }
 
   p {
     font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
+    font-size: 16px;
     text-align: justify;
+    line-height: 1.8;
+    padding: 0 35px;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
+      font-size: 16px;
     }
   }
 }
@@ -413,6 +455,10 @@ main {
   font-family: 'Caprasimo', sans-serif;
   font-size: 3rem;
   color: #444343;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 /* ----------Contact---------- */
@@ -428,7 +474,7 @@ main {
 
   @media (max-width: 768px) {
     display: flex;
-    max-width: 375px;
+    max-width: 100%;
     flex-direction: column;
     padding: 20px 30px;
     height: auto;
@@ -440,6 +486,11 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      padding: 0;
+    }
   }
 
   .footer__text,
@@ -452,7 +503,7 @@ main {
     text-align: center;
 
     @media (max-width: 768px) {
-      max-width: 375px;
+      max-width: 100%;
       font-size: 1.2rem;
     }
   }
@@ -464,7 +515,7 @@ main {
     flex-direction: column;
 
     @media (max-width: 768px) {
-      max-width: 375px;
+      max-width: 100%;
     }
   }
 }
@@ -476,7 +527,7 @@ main {
   align-items: center;
 
   @media (max-width: 768px) {
-    max-width: 375px;
+    max-width: 100%;
   }
 }
 
@@ -490,40 +541,35 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin: 40px 0;
 
   @media (max-width: 768px) {
     display: flex;
-    max-width: 375px;
+    max-width: 100%;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 0;
+    margin: 0;
     height: auto;
   }
 }
 
 .technologies__title {
-  font-family: 'Caprasimo', sans-serif;
-  font-size: 3rem;
+  font-family: 'MyriamadPro Bold', sans-serif;
+  font-size: 36px;
   color: #444343;
   text-align: center;
   text-transform: uppercase;
 
   @media (max-width: 768px) {
-    max-width: 375px;
+    max-width: 100%;
     font-size: 1.5rem;
   }
 }
 
-.technologies__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.icon {
+  margin: 80px;
 
   @media (max-width: 768px) {
-    display: flex;
-    max-width: 375px;
-    flex-direction: column;
-    padding: 20px 30px;
-    height: auto;
+    margin: 40px 0;
   }
 }
