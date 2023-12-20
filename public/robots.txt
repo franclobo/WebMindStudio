@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/  # Excluir la carpeta de administración
+Disallow: /private/  # Excluir la carpeta de contenido privado
+Disallow: /temp/  # Excluir la carpeta temporal
+Disallow: /cgi-bin/  # Excluir scripts CGI
+Disallow: /wp-admin/  # Excluir la administración de WordPress
+
+Sitemap: https://webminds.studio/sitemap.xml  # Ruta al archivo sitemap XML
