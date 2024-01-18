@@ -42,15 +42,11 @@ function Footer() {
         <p className="footer__text">
           Celular: <br />
           Quito: +593 96 184 2276
-          <br />
-          Santiago de Chile: +56 9 3065 8893
         </p>
         <p className="footer__text">
           Email:
           <br />
           francisco.borja@webmindsstudio.com
-          <br />
-          carlos.chiluisa@webmindsstudio.com
         </p>
         <p className="footer__text">
           Horario de atención: 08:00 - 18:00 UTC -5 de Lunes a Sábado
