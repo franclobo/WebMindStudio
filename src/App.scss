@@ -166,9 +166,11 @@ main {
   }
 }
 
-.basico {
-  border: 5px solid rgba(215, 230, 10, 1);
-  background-color: rgba(215, 230, 10, 0.5);
+.basico,
+.premium,
+.avanzado {
+  border: 5px solid rgb(7, 35, 129);
+  background-color: rgba(253, 253, 253, 0.842);
   border-radius: 10px;
 
   img {
@@ -186,9 +188,6 @@ main {
 }
 
 .avanzado {
-  border: 5px solid rgba(10, 87, 230, 1);
-  background-color: rgba(10, 87, 230, 0.5);
-  border-radius: 10px;
 
   img {
     position: absolute;
@@ -205,10 +204,7 @@ main {
 }
 
 .premium {
-  border: 5px solid rgb(10, 230, 47);
-  background-color: rgba(28, 230, 10, 0.5);
-  border-radius: 10px;
-
+  
   img {
     position: absolute;
     top: -193px;
