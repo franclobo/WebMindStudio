@@ -40,7 +40,7 @@ export const Home = () => {
             <img src={Empresario} alt="Empresario" />
           </div>
           <div className="service_description">
-            <h2 className="basico__title">Emprendedor digital</h2>
+            <h2 className="basico__title">Emprendedor Digital</h2>
             <p className="basico__txt">
               Este paquete es ideal para emprendedores que desean promocionar
               sus productos o servicios a través de catálogos. Creamos una
