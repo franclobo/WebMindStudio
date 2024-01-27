@@ -35,7 +35,7 @@ export const Home = () => {
         </div>
       </section>
       <section className="services" id="services">
-        <div className="servicio basico">
+        <div className="servicio junior">
           <div className="service_img">
             <img src={Empresario} alt="Empresario" />
           </div>

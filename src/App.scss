@@ -166,6 +166,7 @@ main {
   }
 }
 
+.junior,
 .basico,
 .premium,
 .avanzado {
@@ -208,6 +209,22 @@ main {
   img {
     position: absolute;
     top: -165px;
+    height: 625px;
+    left: 25px;
+    width: auto;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.junior {
+
+  img {
+    position: absolute;
+    top: -145px;
     height: 625px;
     left: 25px;
     width: auto;
