@@ -1,6 +1,7 @@
 import Studio from "../assets/images/diseño.jpg";
 import UncontrolledExample from "./Carousel";
 import Footer from "./Footer";
+import Empresario from "../assets/images/click.png";
 import Pensativo from "../assets/images/pensativo.png";
 import Emocionado from "../assets/images/emocionado.png";
 import Compras from "../assets/images/transformación.png";
@@ -35,6 +36,42 @@ export const Home = () => {
       </section>
       <section className="services" id="services">
         <div className="servicio basico">
+          <div className="service_img">
+            <img src={Empresario} alt="Empresario" />
+          </div>
+          <div className="service_description">
+            <h2 className="basico__title">Emprendedor digital</h2>
+            <p className="basico__txt">
+              Este paquete es ideal para emprendedores que desean promocionar
+              sus productos o servicios a través de catálogos. Creamos una
+              página web atractiva que te permita contactar con tus clientes.
+            </p>
+            <strong className="basico__description">Características:</strong>
+            <ul className="basico__list">
+              <li className="basico__item">
+                Aplicación de una sola página, landingpage.
+              </li>
+              <li className="basico__item">
+                Diseño responsivo para una experiencia perfecta en dispositivos
+                móviles.
+              </li>
+              <li className="basico__item">Integración de redes sociales.</li>
+              <li className="basico__item">
+                Formulario de contacto para facilitar la comunicación.
+              </li>
+              <li className="basico__item">Correo empresarial.</li>
+            </ul>
+            <strong className="basico__description">Beneficios:</strong>
+            <ul className="basico__list">
+              <li className="basico__item">Inicio rápido en línea.</li>
+              <li className="basico__item">Presencia digital profesional.</li>
+            </ul>
+            <strong className="basico__description price">
+              Desde: USD $199
+            </strong>
+          </div>
+        </div>
+        <div className="servicio basico">
           <div className="service_description">
             <h2 className="basico__title">Presencia Digital Inicial</h2>
             <p className="basico__txt">
@@ -52,11 +89,12 @@ export const Home = () => {
                 móviles.
               </li>
               <li className="basico__item">
-                Integración de redes sociales básica.
+                Integración de redes sociales.
               </li>
               <li className="basico__item">
                 Formulario de contacto para facilitar la comunicación.
               </li>
+              <li className="basico__item">Correo empresarial.</li>
             </ul>
             <strong className="basico__description">Beneficios:</strong>
             <ul className="basico__list">
@@ -102,6 +140,7 @@ export const Home = () => {
               <li className="avanzado__item">
                 SEO básico para mejorar la visibilidad en línea.
               </li>
+              <li className="basico__item">Correo empresarial.</li>
             </ul>
             <strong className="avanzado__description">Beneficios:</strong>
             <ul className="avanzado__list">
@@ -138,6 +177,7 @@ export const Home = () => {
               <li className="premium__item">
                 Estrategia completa de SEO y marketing digital.
               </li>
+              <li className="basico__item">Correo empresarial.</li>
             </ul>
             <strong className="premium__description">Beneficios:</strong>
             <ul className="premium__list">
@@ -158,9 +198,7 @@ export const Home = () => {
         </div>
       </section>
       <section className="technologies">
-        <h2 className="technologies__title">
-          USAMOS LAS MEJORES TECNOLOGÍAS
-        </h2>
+        <h2 className="technologies__title">USAMOS LAS MEJORES TECNOLOGÍAS</h2>
         <div className="technologies__icons">
           <IconCarousel />
         </div>
