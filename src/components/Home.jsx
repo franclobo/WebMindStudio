@@ -88,13 +88,12 @@ export const Home = () => {
                 Diseño responsivo para una experiencia perfecta en dispositivos
                 móviles.
               </li>
-              <li className="basico__item">
-                Integración de redes sociales.
-              </li>
+              <li className="basico__item">Integración de redes sociales.</li>
               <li className="basico__item">
                 Formulario de contacto para facilitar la comunicación.
               </li>
               <li className="basico__item">Correo empresarial.</li>
+              <li className="basico__item">Pasarela de pago.</li>
             </ul>
             <strong className="basico__description">Beneficios:</strong>
             <ul className="basico__list">
@@ -141,6 +140,7 @@ export const Home = () => {
                 SEO básico para mejorar la visibilidad en línea.
               </li>
               <li className="basico__item">Correo empresarial.</li>
+              <li className="basico__item">Pasarela de pago.</li>
             </ul>
             <strong className="avanzado__description">Beneficios:</strong>
             <ul className="avanzado__list">
@@ -178,6 +178,7 @@ export const Home = () => {
                 Estrategia completa de SEO y marketing digital.
               </li>
               <li className="basico__item">Correo empresarial.</li>
+              <li className="basico__item">Pasarela de pago.</li>
             </ul>
             <strong className="premium__description">Beneficios:</strong>
             <ul className="premium__list">
